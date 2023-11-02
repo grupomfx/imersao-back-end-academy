@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#retomando-conceitos-do-linguagem-js-part-i" class="md-skip">
+        <a href="#retomando-conceitos-da-linguagem-js-part-i" class="md-skip">
           Skip to content
         </a>
       
@@ -445,8 +445,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tipos-de-dados" class="md-nav__link">
-    Tipos de dados
+  <a href="#tipos-de-dados-primitivos" class="md-nav__link">
+    Tipos de dados primitivos
   </a>
   
 </li>
@@ -454,6 +454,27 @@
         <li class="md-nav__item">
   <a href="#convertendo-tipos-de-dados" class="md-nav__link">
     Convertendo tipos de dados
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expressoes-e-operadores" class="md-nav__link">
+    Expressões e Operadores
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trabalhando-com-condicionais" class="md-nav__link">
+    Trabalhando com condicionais
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trabalhando-com-lacos-e-iteracoes" class="md-nav__link">
+    Trabalhando com laços e iterações
   </a>
   
 </li>
@@ -555,7 +576,7 @@
   
 
 
-<h1 id="retomando-conceitos-do-linguagem-js-part-i">Retomando Conceitos do Linguagem JS (Part I) 📙</h1>
+<h1 id="retomando-conceitos-da-linguagem-js-part-i">Retomando Conceitos da Linguagem JS (Part I) 📙</h1>
 <h3 id="afinal-o-que-e-o-javascript">Afinal o que é o Javascript?</h3>
 <p>Javascript é uma linguagem de programação, E como todas as demais linguagens de programação funciona traduzindo sintaxe 
 escrita de modo a converter as instruções para código de máquina.</p>
@@ -626,7 +647,7 @@ variável local, pois ela está disponível somente dentro dessa função.</p>
 </span><span class="p">}</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">y</span><span class="p">);</span><span class="w"> </span><span class="c1">// ReferenceError: y não está definido</span>
 </code></pre></div></td></tr></table></div>
-<h3 id="tipos-de-dados">Tipos de dados</h3>
+<h3 id="tipos-de-dados-primitivos">Tipos de dados primitivos</h3>
 <ul>
 <li><strong>String:</strong> pode ser qualquer valor que esteja entre aspas simples ou aspas duplas e que, 
 normalmente, representam textos em geral. Podem ser letras, números e sinais de pontuação;</li>
@@ -708,6 +729,388 @@ do tipo string em outros formatos como numérico e ponto flutuante.</p>
 <span class="nx">oneVariable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">parseFloat</span><span class="p">(</span><span class="nx">oneVariable</span><span class="p">)</span><span class="w"> </span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="p">(</span><span class="nx">oneVariable</span><span class="p">))</span><span class="w"> </span><span class="c1">// float </span>
 </code></pre></div></td></tr></table></div>
+<h3 id="expressoes-e-operadores">Expressões e Operadores</h3>
+<p>Como qualquer outra linguagem de programção, o javascript faz uso em sua sintaxe para realizar 
+determinadas operações. Podemos categorizar esses operadores em:</p>
+<ul>
+<li>
+<p><strong>Operador de Atribuição</strong>:</p>
+<p>Um operador de atribuição atribui um valor ao operando à sua esquerda baseado no valor do operando à direita,
+usando o simbolo <code>=</code>, logo temos os seguintes exemplo <code>x = y</code> / <code>x = 10</code> / <code>x = "Hello Word"</code> </p>
+<p>Algumas das variações do operador:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Nome</th>
+<th style="text-align: left;">Operador encurtado</th>
+<th style="text-align: left;">Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Atribuição</td>
+<td style="text-align: left;">x = y</td>
+<td style="text-align: left;">x = y</td>
+</tr>
+<tr>
+<td style="text-align: left;">Atribuição de adição</td>
+<td style="text-align: left;">x += y</td>
+<td style="text-align: left;">x = x + y</td>
+</tr>
+<tr>
+<td style="text-align: left;">Atribuição de subtração</td>
+<td style="text-align: left;">x -= y</td>
+<td style="text-align: left;">x = x - y</td>
+</tr>
+<tr>
+<td style="text-align: left;">Atribuição de multiplicação</td>
+<td style="text-align: left;">x *= y</td>
+<td style="text-align: left;">x = x * y</td>
+</tr>
+<tr>
+<td style="text-align: left;">Atribuição de divisão</td>
+<td style="text-align: left;">x /= y</td>
+<td style="text-align: left;">x = x / y</td>
+</tr>
+<tr>
+<td style="text-align: left;">Atribuição de resto</td>
+<td style="text-align: left;">x %= y</td>
+<td style="text-align: left;">x = x % y</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><strong>Operador de comparação</strong>:</p>
+<p>Um operador de comparação compara seus operandos e retorna um valor lógico baseado em se a comparação
+é verdadeira. Os operandos podem ser numéricos, strings, lógicos ou objetos. Logo temos os seguintes 
+exemplos <code>x == 10</code> / <code>y != x</code> </p>
+<p>Algumas das variações do operador:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">num1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">num2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">4</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Operador</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Exemplos que retornam verdadeiro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Igual (==)</td>
+<td style="text-align: left;">Retorna verdadeiro caso os operandos sejam iguais.</td>
+<td style="text-align: left;"><code>num1 == 3  num1 == "3" 3 == '3'</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Não igual (!=)</td>
+<td style="text-align: left;">Retorna verdadeiro caso os operandos não sejam iguais.</td>
+<td style="text-align: left;"><code>num1 != 4 num2 != "3"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Estritamente igual</td>
+<td style="text-align: left;">(===)     Retorna verdadeiro caso os operandos sejam iguais e do mesmo tipo.</td>
+<td style="text-align: left;"><code>num1 === 3</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Estritamente não igual</td>
+<td style="text-align: left;">(!==)     Retorna verdadeiro caso os operandos não sejam iguais e/ou não sejam do mesmo tipo.</td>
+<td style="text-align: left;"><code>num1 !== "3" 3 !== '3'</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Maior que (&gt;)</td>
+<td style="text-align: left;">Retorna verdadeiro caso o operando da esquerda seja maior que o da direita.</td>
+<td style="text-align: left;"><code>num2 &gt; num1 "12" &gt; 2</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Maior que ou igual</td>
+<td style="text-align: left;">(&gt;=)  Retorna verdadeiro caso o operando da esquerda seja maior ou igual ao da direita.</td>
+<td style="text-align: left;"><code>num2 &gt;= num1 num1 &gt;= 3</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Menor que (&lt;)</td>
+<td style="text-align: left;">Retorna verdadeiro caso o operando da esquerda seja menor que o da direita.</td>
+<td style="text-align: left;"><code>num1 &lt; num2 "12" &lt; "2"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Menor que ou igual (&lt;=)</td>
+<td style="text-align: left;">Retorna verdadeiro caso o operando da esquerda seja menor ou igual ao da direita.</td>
+<td style="text-align: left;"><code>num1 &lt;= num2 num2 &lt;= 5</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><strong>Operadores aritmético</strong>:</p>
+<p>Operadores aritméticos tomam valores numéricos (sejam literais ou variáveis) como seus operandos e retornam um único valor númerico. 
+Os operadores aritméticos padrão são os de soma <code>(+)</code>, subtração <code>(-)</code>, multiplicação <code>(*)</code> e divisão <code>(/)</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Operador</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Exemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Módulo (%)</td>
+<td style="text-align: left;">Operador binário. Retorna o inteiro restante da divisão dos dois operandos.</td>
+<td style="text-align: left;">12 <code>%</code> 5 retorna 2.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Incremento (++)</td>
+<td style="text-align: left;">Operador unário. Adiciona um ao seu operando. Se usado como operador prefixado <code>(++x)</code>, retorna o valor de seu operando após a adição. Se usado como operador pósfixado <code>(x++)</code>, retorna o valor de seu operando antes da adição.</td>
+<td style="text-align: left;">Se x é 3, então ++x define x como 4 e retorna 4, enquanto x++ retorna 3 e, somente então, define x como 4.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Decremento (--)</td>
+<td style="text-align: left;">Operador unário. Subtrai um de seu operando. O valor de retorno é análogo àquele do operador de incremento.</td>
+<td style="text-align: left;">Se x é 3, então <code>(--x)</code> define x como 2 e retorna 2, enquanto <code>(x--)</code> retorna 3 e, somente então, define x como 2.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Negação (-)</td>
+<td style="text-align: left;">Operador unário. Retorna a negação de seu operando.</td>
+<td style="text-align: left;">Se x é 3, então <code>-x</code> retorna -3.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Adição (+)</td>
+<td style="text-align: left;">Operador unário. Tenta converter o operando em um número, sempre que possível.</td>
+<td style="text-align: left;"><code>+"3"</code> retorna 3</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><strong>Operadores lógicos</strong>: </p>
+<p>Operadores lógicos são utilizados tipicamente com valores booleanos (lógicos); neste caso, retornam um valor booleano <code>true</code> ou <code>false</code>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Operador</th>
+<th style="text-align: left;">Utilização</th>
+<th style="text-align: left;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">AND lógico <code>(&amp;&amp;)</code></td>
+<td style="text-align: left;">expr1 <code>&amp;&amp;</code> expr2</td>
+<td style="text-align: left;">(E lógico) - Retorna expr1 caso possa ser convertido para falso; senão, retorna expr2. Assim, quando utilizado com valores booleanos, &amp;&amp; retorna verdadeiro caso ambos operandos sejam verdadeiros; caso contrário, retorna falso.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OU lógico <code>(||)</code></td>
+<td style="text-align: left;">expr1 <code>||</code> expr2</td>
+<td style="text-align: left;">(OU lógico) - Retorna expr1 caso possa ser convertido para verdadeiro; senão, retorna expr2. Assim, quando utilizado com valores booleanos,</td>
+</tr>
+<tr>
+<td style="text-align: left;">NOT lógico <code>(!)</code></td>
+<td style="text-align: left;"><code>!</code>expr</td>
+<td style="text-align: left;">(Negação lógica) Retorna falso caso o único operando possa ser convertido para verdadeiro; senão, retorna verdadeiro.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><strong>Operador Ternário condicional</strong>:</p>
+<p>O operador condicional (ternário) é o único operador JavaScript que possui três operandos. Este operador é frequentemente usado como um atalho para a instrução <code>if</code></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w"> </span><span class="nx">condition</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="nx">expr1</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="nx">expr2</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// ----- option one ------</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">16</span><span class="p">;</span>
+<span class="nx">age</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">18</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;yes! continue&quot;</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;no! stop&quot;</span><span class="p">);</span>
+
+<span class="c1">// ---- option two -------</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">stop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">23</span><span class="p">;</span>
+
+<span class="nx">age</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">18</span>
+<span class="w">    </span><span class="o">?</span><span class="w"> </span><span class="p">(</span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;OK, you can go.&quot;</span><span class="p">),</span><span class="w"> </span><span class="nx">location</span><span class="p">.</span><span class="nx">assign</span><span class="p">(</span><span class="s2">&quot;continue.html&quot;</span><span class="p">))</span>
+<span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="p">((</span><span class="nx">stop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">),</span><span class="w"> </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Sorry, you are much too young!&quot;</span><span class="p">));</span>
+
+<span class="c1">// ------ option three ----</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">16</span><span class="p">;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">url</span><span class="w"> </span><span class="o">=</span>
+<span class="nx">age</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">18</span>
+<span class="o">?</span><span class="w"> </span><span class="p">(</span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;OK, you can go.&quot;</span><span class="p">),</span>
+<span class="w">  </span><span class="c1">// alert returns &quot;undefined&quot;, but it will be ignored because</span>
+<span class="w">  </span><span class="c1">// isn&#39;t the last comma-separated value of the parenthesis</span>
+<span class="w">  </span><span class="s2">&quot;continue.html&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">// the value to be assigned if age &gt; 18</span>
+<span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;You are much too young!&quot;</span><span class="p">),</span>
+<span class="w">  </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Sorry :-(&quot;</span><span class="p">),</span>
+<span class="w">  </span><span class="c1">// etc. etc.</span>
+<span class="w">  </span><span class="s2">&quot;stop.html&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// the value to be assigned if !(age &gt; 18)</span>
+</code></pre></div></td></tr></table></div>
+</li>
+</ul>
+<h3 id="trabalhando-com-condicionais">Trabalhando com condicionais</h3>
+<p>Em qualquer linguagem de programação, o código precisa tomar decisões e realizar ações de acordo, 
+dependendo de diferentes entradas. As declarações condicionais nos permitem representar tomadas de 
+decisão como estas em JavaScript, a partir da escolha que deve ser feita (por exemplo, "um biscoito ou dois"),
+ao resultado obtido dessas escolhas (talvez o resultado de "comer um biscoito" possa ser "ainda sentido fome ",
+e o resultado de "comer dois biscoitos" pode ser "sentir-se satisfeito" por exemplo.</p>
+<p>De longe o tipo mais comum de declaração condicional que você usará em JavaScript é com base na expressão <code>if</code> <code>else</code></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">condicao</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// codigo para executar caso a condição seja verdadeira</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// senão, executar este código</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>Então vamos partir de um contexto mais proximo de real para exemplificar usando o javascript para resolver uma 
+decisão condicional, vejamos abaixo:</p>
+<blockquote>
+<p>Precisamos construir uma aplicação que realize o login de usuário ao sistema, e para isso precisamos validar
+uma condições tais como:</p>
+<ol>
+<li>O usuário que está tentando fazer login é um usuario cadastrado</li>
+<li>O usuário que está tentando fazer login possui algum tipo de status que impeça ele entrar no sistema</li>
+<li>Caso o usuário consiga entrar no sistema para onde ele deve ser direcionado</li>
+</ol>
+</blockquote>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">userData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">nome</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;foo bar&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;foobar@contact.com&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">status</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;ACTIVE&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">password</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;123456&quot;</span>
+<span class="p">}</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">userInputLogin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">loginUser</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;foobar@contact.com&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">loginPassword</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;12345&quot;</span>
+<span class="p">}</span>
+
+<span class="c1">// apply conditionals</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">userInputLogin</span><span class="p">.</span><span class="nx">loginUser</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nx">userData</span><span class="p">.</span><span class="nx">email</span><span class="w">  </span><span class="o">&amp;&amp;</span><span class="w"> </span>
+<span class="w">    </span><span class="nx">userInputLogin</span><span class="p">.</span><span class="nx">loginPassword</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nx">userData</span><span class="p">.</span><span class="nx">password</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;login Success!&quot;</span><span class="p">);</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">userData</span><span class="p">.</span><span class="nx">status</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;ACTIVE&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Redirect home&quot;</span><span class="p">);</span>
+<span class="hll"><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">userData</span><span class="p">.</span><span class="nx">status</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;BLOCKED&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span class="hll"><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;show alert user! No redirect home&quot;</span><span class="p">)</span>
+</span><span class="w">    </span><span class="p">}</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;login Invalid!&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>Veja que na linha <code>23</code> do nosso código, fazemos a expressão <code>else if</code> que nada mais é que permitir que o 
+javascript encadei outras tomadas de decisões.</p>
+<p>Outra forma de trabalhar com tomadas de decisões é através da expressão <code>switch case</code>, porém essa tem uma 
+particularidade que é, com um unico valor de entrada podemos fazer validações de forma encadeada por exemplo:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">userData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">nome</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;foo bar&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">email</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;foobar@contact.com&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">status</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;ACTIVE&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">password</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;123456&quot;</span>
+<span class="p">}</span>
+
+<span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="nx">status</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="hll"><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s2">&quot;ACTIVE&quot;</span><span class="o">:</span>
+</span><span class="hll"><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;user is allowed login&quot;</span><span class="p">);</span>
+</span><span class="hll"><span class="w">        </span><span class="k">break</span><span class="p">;</span>
+</span><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s2">&quot;BLOCKED&quot;</span><span class="o">:</span>
+<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;user is not allowed login&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s2">&quot;INACTIVE&quot;</span><span class="o">:</span>
+<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;user is not allowed login&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">default</span><span class="o">:</span>
+<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;do not do anything!&quot;</span><span class="p">)</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>Veja que neste exemplo acima fizemos a checagem apenas de um unico valor de entrada, no caso o status 
+do usuario, passamos a executar uma validação encadeada, onde de acordo com <code>case</code> meu codigo tem uma saida
+diferente, e mais usamos essa expressão <code>break</code> para que quando a condição for atendida ele simplesmente quebra 
+a continução dos demais <code>case</code>, ou seja nosso código iria entrar na primeiro caso e como o status <code>ACTIVE</code> é uma 
+condição valida, ele não executaria as demais linhas abaixo, indo direto para linha <code>22</code> que é o fim da instrução
+do <code>switch case</code></p>
+<h3 id="trabalhando-com-lacos-e-iteracoes">Trabalhando com laços e iterações</h3>
 
 
 
