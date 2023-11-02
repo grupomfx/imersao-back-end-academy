@@ -36,12 +36,11 @@ nossas aulas! </p>
 | Tipos de dados primitivos do javascript                                           | [Acessar]()      |
 | Verificando tipos com a expressão `typeof`                                        | [Acessar]()      |
 | Convertendo string em tipos numericos `parseInt` `parseFloat`                     | [Acessar]()      |
-| Trabalhando com sintaxes de comentários                                           | [Acessar]()      |
+| Expressões e operadores (*Atribução* / *Comparação* / *Aritméticos* / *Lógicos* / *Condicional ternário*) | [Acessar]()      | 
 | Trabalhando com condicionais (`if` `else` / `else if` / `switch`)                 | [Acessar]()      |
+| Trabalhando com laços e iterações (`for` / `do while` / `while` / `break` / `continue` / `for in` / `for of` ) |  [Acessar]()|
 | Trabalhando com expressões de controle de fluxo (`try` / `catch` / `finaly`)      | [Acessar]()      |
 | Trabalhando exceções (`throw`)                                                    | [Acessar]()      | 
-| Trabalhando com laços e iterações (`for` / `do while` / `while` / `break` / `continue` / `for in` / `for of` ) |  [Acessar]()|
-| Expressões e operadores (*Atribução* / *Comparação* / *Aritméticos* / *Lógicos* / *Condicional ternário*) | [Acessar]()      | 
 | Trabalhando com o strings (`split` / `slice` / `trim` / `match` / `replace`)      | [Acessar]()      | 
 | Manipulando concateações com template string                                      | [Acessar]()      | 
 
