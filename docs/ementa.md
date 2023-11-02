@@ -1,4 +1,4 @@
-<img src="/images/version_control.svg"/>
+<img src="../images/version_control.svg"/>
 
 
 ### Vamos Lá! 👊

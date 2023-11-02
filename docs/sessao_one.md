@@ -1,10 +1,11 @@
 ---
-title: My Document
-summary: A brief description of my document.
+title: Configurando o nosso ambiente.
 authors:
-    - Waylan Limberg
-    - Tom Christie
-date: 2018-07-10
+    - Rodrigo Becker
+date: 2023-11-01
 some_url: https://example.com
 ---
-This is the first paragraph of the document.
+
+# Configurando nosso ambiente 💻
+
+

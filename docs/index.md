@@ -1,4 +1,4 @@
-<img src="/images/pair_programming.svg">
+<img src="images/pair_programming.svg">
 
 
 # Imersão Back-end MFX
@@ -43,18 +43,18 @@ grande aliado para alcançar seus objetivos e assim conseguir alcançar seu prox
 
 # Ferramentas Necessárias 🧰
 
-1. Um editor de texto ou IDE de sua escolha. Recomendo o **vscode**, durante as aulas estou usando o **neovim**
+1. Um editor de texto ou IDE de sua escolha. Recomendo o **[vscode](https://code.visualstudio.com/)**, durante as aulas estou usando o **[neovim](https://neovim.io/)**
 2. Um terminal. Todos os exemplos feitos em aulas são explicados rodando o node no terminal, fique a vontade para usar o da sua preferência. Minha dica é se estiver usando o **vscode** basta utilizar próprio disponibilizado pelo editor.
-3. Ter instalado uma versão do nodejs mais recente e compativel com seu sistema operacional.
+3. Ter instalado uma versão do **[nodejs](https://nodejs.org/en)** mais recente e compativel com seu sistema operacional.
 4. Uma conta no Github: para podermos subir todos os nossos codigos e assim você montar seu portifólio de estudos.
-5. Como iremos trabalhar com APIs, é importante termos instalado um client para montarmos nossas requisições como (Postman / Insonmia)
+5. Como iremos trabalhar com APIs, é importante termos instalado um client para montarmos nossas requisições como ([Postman](https://www.postman.com/) / [Insomnia](https://insomnia.rest/download))
 
 
 # Sobre o instrutor ✌️ 😎
 
 
 <div class="about">
-<img class="image-about" src="/images/me.png" />
+<img class="image-about" src="images/me.png" />
 <p align="justify">Prazer me chamo <b>Rodrigo Becker</b> , atuo na área de tecnologia há mais de 11 anos, atualmente trabalho como Arquiteto
 de soluções em um grande banco. Tenho uma vasta experiência em desenvolvimento de software, já atuei em diversos projetos
 desde de pequenas iniciativas à grandes projetos com as mais diversas tecnologias e complexidades. Tive também a oportunidade por muito anos 
@@ -64,7 +64,12 @@ nesta nova etapa que se inicia. </p>
 </div>
 
 
+[:fontawesome-brands-linkedin:{.linkedin } Linkedin](https://www.linkedin.com/in/rodrigo-becker/){ .md-button }
+[:fontawesome-brands-github:{.github } Github ](https://github.com/RodrigoBecker){ .md-button }
+
+
+---
 
 # Licença 📖
 
-Todo esse material, foi escrito e produzido por @RodrigoBecker em parceria com o **Grupo MFX @copyright** 
+Todo esse material, foi escrito e produzido por @RodrigoBecker em parceria com o **[Grupo MFX](https://grupomfx.com) @copyright** 
