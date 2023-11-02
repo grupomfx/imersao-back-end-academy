@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "imersao-back-end"
+version = "0.1.0"
+description = "repositorio imersão"
+authors = ["Becker <rodrigo.beckermore@gmail.com>"]
+readme = "README.md"
+packages = [{include = "imersao_back_end"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mkdocs = "^1.5.3"
+mkdocs-material = "^9.4.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

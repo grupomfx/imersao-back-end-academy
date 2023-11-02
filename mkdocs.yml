@@ -1,0 +1,19 @@
+site_name: MFX Academy
+theme:
+  name: material
+  custom_dir: overrides
+  highlightjs: true
+nav:
+  - Home: index.md
+  - Ementa: ementa.md
+  - Conteudos:
+      - Sessao-01: sessao_one.md
+  - Projetos:
+    - Projeto 01: projeto_one.md 
+
+extra_css:
+  - stylesheets/custom.css
+
+extra_javascript:
+  - javascripts/custom.js
+
