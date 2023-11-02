@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 768px){
+	    flex-wrap: wrap;
+      justify-content:center;
+  }
 }
 
 .image-about{
@@ -10,8 +14,11 @@
   padding: 10px;
 }
 
-.container-menu {
 
-  display: flex;
-  min-width: 100% !important;
+
+.md-typeset .md-button {
+@media screen and (max-width: 768px){
+	    padding: 10px !important;
+  }
+
 }
